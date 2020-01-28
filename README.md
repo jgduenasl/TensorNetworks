@@ -7,4 +7,5 @@ These are calculations to validate the article named: [A Generalized Language Mo
 The model is developed in python using the tensor network library. There are the following tasks:
 1. The import/ directory contains the raw data and initial preparation.
 2. The src/ directory contains the code for the language representation of the corpus and the tensor representation for sentences. Adittionaly, we validate the results with respect Recurrent Neural Networks.
-3. The write/ directory combines the estimates and graphs in an RMarkdown document.
+3. The output/ directory contains the results of running the model and plot of validation tests.
+4. The write/ directory combines the estimates and graphs in an RMarkdown document.
