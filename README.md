@@ -1,4 +1,4 @@
-# TensorNetworks
+# Tensor Networks
 Theory and code to analyze tensor networks for machine learning applications. 
 
 This project is developed by the [Physics and Machine Learning Group](https://sites.google.com/s/185Lxg3icUi3qxMaMur9WNckY_kCIHfgs/p/1VgB8YLjVhMoYLXh7L1kDSS4GV7Fe6kdj/edit) of the [National University of Colombia](http://unal.edu.co/)
