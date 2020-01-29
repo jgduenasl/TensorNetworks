@@ -56,6 +56,7 @@ Y_train = to_categorical(Y_train)
 Y_test = to_categorical(Y_test)
 
 #Feature map
+dtmp = X_train*(pi/2)
 F_train = np.concatenate((np.cos(dtmp.reshape(1,dtmp.shape[1]**2,dtmp.shape[0])),
                           np.sin(dtmp.reshape(1,dtmp.shape[1]**2,dtmp.shape[0]))),axis=0)
 #F_train(m,:,n) es un vector de caracteristicas 2-dimensional para el n-esimo pixel y la m-esima imagen
