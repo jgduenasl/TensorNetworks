@@ -25,5 +25,8 @@ input/mnist.csv.gz: \       # target object file
     
 #review the outputs of each task and split
 mps_initialization:
-    python3 import/mps_ini.py import/left_canon_form.py import/feature_map_update.py import/dmrg.py
+    python3 classification/mps_ini.py 
+    python3 classification/left_canon_form.py 
+    python3 classification/feature_map_update.py 
+    python3 classification/dmrg.py
  
