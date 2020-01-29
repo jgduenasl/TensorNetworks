@@ -11,7 +11,7 @@
 
 .PHONY: all clean
 
-all: input/mnist.csv.gz 
+all: input/mnist.csv.gz output/orig_minst.jpeg output/reduced_minst.jpeg
 
 clean:
     rm output/*
