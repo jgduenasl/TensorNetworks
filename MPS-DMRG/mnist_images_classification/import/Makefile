@@ -17,9 +17,28 @@ clean:
     rm output/*
  
 #import mnist dataset from a python script
-input/mnist.csv.gz: \       # target object file
+input/mnist.csv.gz: \       		# target object file
 		input/import-mnist.py \ # requirements
-	python3 $< \              # recipes: $< is equivalent to input/import-mnist.py
-		--output=$@             # $@ is equivalent to input/mnist.csv.gz
- 
+	python3 $< \              	# recipes: $< is equivalent to input/import-mnist.py
+		--output=$@      	# $@ is equivalent to input/mnist.csv.gz
+		
+output/orig_minst.jpeg: \
+		src/clean.py \
+		input/mnist.csv.gz 
+	python3 $< \
+		--output=$@
+
+#how to generate two object files from the same source file?
+output/reduced_minst.jpeg: \
+		src/clean.py \
+		input/mnist.csv.gz 
+	python3 $< \
+		--output=$@
+		
+#generate MPS state with Feature map
+	#what is the result of this task?
+	
+#Implement DMRG
+	#what is the result of this task?
+
  
